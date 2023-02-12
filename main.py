@@ -21,7 +21,7 @@ def generate_answer(model, prompt):
 def main():
     st.title("GPT-3 问答机器人")
     model = "text-davinci-003"
-    question = st.text_input("Ask your question")
+    question = st.text_input("输入你的问题")
     if st.button("提交"):
         answer = generate_answer(model, question)
         st.write("Answer:", answer)
