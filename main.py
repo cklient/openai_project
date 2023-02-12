@@ -19,10 +19,10 @@ def generate_answer(model, prompt):
     return message
 
 def main():
-    st.title("GPT-3 based Question Answering")
+    st.title("GPT-3 问答机器人")
     model = "text-davinci-003"
     question = st.text_input("Ask your question")
-    if st.button("Submit"):
+    if st.button("提交"):
         answer = generate_answer(model, question)
         st.write("Answer:", answer)
         if st.button("Download"):
