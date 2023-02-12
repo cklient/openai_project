@@ -1,1 +1,5 @@
 openai==0.26.5
+streamlit~=1.18.1
+asyncio~=3.4.3
+edgegpt~=0.0.21
+revchatgpt~=2.0.0
