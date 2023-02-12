@@ -2,7 +2,7 @@ import openai
 import streamlit as st
 
 # Replace YOUR_OPENAI_API_KEY with your OpenAI API key
-st.write("api_key:", st.secrets["api_key"])
+#st.write("api_key:", st.secrets["api_key"])
 openai.api_key = st.secrets["api_key"]
 
 def generate_answer(model, prompt):
