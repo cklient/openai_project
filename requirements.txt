@@ -1,2 +1,2 @@
 openai==0.26.5
-revchatgpt==2.1.2
+revchatgpt==2.2.7
