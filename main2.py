@@ -1,11 +1,5 @@
-import asyncio
-from EdgeGPT import Chatbot
+import openai
+openai.api_key = "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"  # supply your API key however you choose
 
-async def main():
-    bot = Chatbot()
-    print(await bot.ask(prompt="Hello world"))
-    await bot.close()
-
-
-if __name__ == "__main__":
-    asyncio.run(main())
+completion = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=[{"role": "user", "content": "Hello world!"}])
+print(completion.choices[0].message.content)
